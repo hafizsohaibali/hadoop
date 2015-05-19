@@ -101,3 +101,23 @@ bash /mnt/code/hadoop/command.sh
 to check time 
 
 cat /mnt/code/output/time.txt
+
+
+
+
+
+cd /mnt/code/hadoop/
+git pull
+cd
+bash /mnt/code/hadoop/merge.sh
+cd /mnt/code/hadoop/
+git pull
+cd
+bash /mnt/code/hadoop/command.sh
+ 
+
+ 
+ 
+to check time 
+
+cat /mnt/code/output/time.txt
