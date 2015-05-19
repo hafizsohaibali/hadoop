@@ -1,4 +1,4 @@
-hadoop fs -rm -r  /user/input/train/bytes
+hadoop fs -rm -r  /user/input/train/output
 echo '1000 start' >> /mnt/code/output/time.txt
 date +%s >> /mnt/code/output/time.txt
 bin/hadoop jar 
