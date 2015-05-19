@@ -81,3 +81,23 @@ sjkaries
  
  
  hadoop distcp s3://rg4/train/bytes /user/input/train/bytes
+ 
+ 
+ 
+ 
+ 
+cd /mnt/code/hadoop/
+git pull
+cd
+bash /mnt/code/hadoop/merge.sh
+cd /mnt/code/hadoop/
+git pull
+cd
+bash /mnt/code/hadoop/command.sh
+ 
+
+ 
+ 
+to check time 
+
+cat /mnt/code/output/time.txt
