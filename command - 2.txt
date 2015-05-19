@@ -77,3 +77,7 @@ sjkaries
  
  good 
  bin/hadoop jar contrib/streaming/hadoop-*streaming*.jar -file /mnt/code_sohaib/hadoop/mapper.py -mapper /mnt/code_sohaib/hadoop/mapper.py -file /mnt/code_sohaib/hadoop/reducer.py -reducer /mnt/code_sohaib/hadoop/reducer.py -input /user/JehandadK/word/wordcount.txt -input /user/JehandadK/word/wordcount1.txt  -output /user/JehandadK/word/output
+ 
+ 
+ 
+ hadoop distcp s3://rg4/train/bytes /user/input/train/bytes
