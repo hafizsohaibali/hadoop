@@ -11,7 +11,7 @@ for line in sys.stdin:
 		continue;
     # split the line into words
     data = line.split(',')
-	print line
+	print line 
     year = data[0]
     distance = data[18]
     print '%s\t%s' % (year, distance)
