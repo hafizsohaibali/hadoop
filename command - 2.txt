@@ -133,3 +133,8 @@ cat /mnt/code/output/time.txt
 
 
 hadoop fs -put /mnt/code/airport-out-put.csv /user/input/airport/airport-out-put.csv
+
+
+wget http://stat-computing.org/dataexpo/2009/1999.csv.bz2
+
+awk 'FNR==1 && NR!=1{next;}{print}' *.csv
