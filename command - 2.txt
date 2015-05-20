@@ -40,6 +40,12 @@ hadoop@52.16.136.65
 http://ec2-52-17-207-58.eu-west-1.compute.amazonaws.com:8888/
 hadoop@52.17.207.58
 
+http://ec2-54-76-138-191.eu-west-1.compute.amazonaws.com:8888/
+hadoop@54.76.138.191
+
+
+sudo yum install git-core
+
 git clone https://github.com/hafizsohaibali/hadoop.git
 
 git pull 
@@ -82,8 +88,11 @@ sjkaries
  
  hadoop distcp s3://rg4/train/bytes /user/input/train/bytes
  
+ hadoop fs -chmod -R 640 /user/input/airport/airport-out-put.csv
  
- 
+ hadoop fs -chmod 1777 /user/input/airport/airport-out-put.csv
+
+ load data inpath '/user/input/airport/airport-out-put.csv' into table flight;
  
  
 cd /mnt/code/hadoop/
