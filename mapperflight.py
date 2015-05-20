@@ -9,4 +9,5 @@ for line in sys.stdin:
     # split the line into words
     data = line.split()
     year = data[0]
-    print '%s\t%s' % (year, 1)
+    distance = data[18]
+    print '%s\t%s' % (year, distance)
