@@ -13,5 +13,5 @@ for line in sys.stdin:
 
     # split the line into words
     data = line.split(',')
-    year = data[0]
+    year = data[9]
     print '%s\t%s' % (year, 1)
