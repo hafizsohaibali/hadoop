@@ -7,7 +7,7 @@ for line in sys.stdin:
     # remove leading and trailing whitespace
     line = line.strip()
     # split the line into words
-    data = line.split()
+    data = line.split(',')
     year = data[0]
     distance = data[18]
     print '%s\t%s' % (year, distance)
