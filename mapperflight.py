@@ -13,5 +13,6 @@ for line in sys.stdin:
 
     # split the line into words
     data = line.split(',')
-    flightnum = data[0]
-    print '%s\t%s' % (flightnum, 1)
+    year = data[0]
+    distance = data[18]
+    print '%s\t%s' % (year, distance)
