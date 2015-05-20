@@ -130,3 +130,6 @@ bash /mnt/code/hadoop/command.sh
 to check time 
 
 cat /mnt/code/output/time.txt
+
+
+hadoop fs -put /mnt/code/airport-out-put.csv /user/input/airport/airport-out-put.csv
