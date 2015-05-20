@@ -139,3 +139,8 @@ hadoop fs -put /mnt/code/hi/airport-out-put.csv /user/input/airport/airport-out-
 wget http://stat-computing.org/dataexpo/2009/1999.csv.bz2
 
 awk 'FNR==1 && NR!=1{next;}{print}' *.csv
+
+load data inpath /mnt/code/hi/out-airport.csv into table flight;
+load data inpath '/user/input/airport/airport-output.csv' into table flight;
+
+select count(flightnum) from flight group by flightnum
