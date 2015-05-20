@@ -131,8 +131,9 @@ to check time
 
 cat /mnt/code/output/time.txt
 
+hadoop fs -rm /user/input/airport/airport-out-put.csv
 
-hadoop fs -put /mnt/code/airport-out-put.csv /user/input/airport/airport-out-put.csv
+hadoop fs -put /mnt/code/hi/airport-out-put.csv /user/input/airport/airport-out-put.csv
 
 
 wget http://stat-computing.org/dataexpo/2009/1999.csv.bz2
