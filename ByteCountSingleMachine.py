@@ -8,6 +8,7 @@ words_file = defaultdict(lambda: 0)
 for line in tr:  # for each line in the file
     splits = line.split(",")
     trid = splits[0]  # e.g. a key
+    print trid
     fop = open("/data/train/bytes/"+trid.replace('"', '') + '.bytes', 'r')  # open the bytes file
     for byteLine in fop:
         split = byteLine.replace("\n", "").split(" ")  # break by space
