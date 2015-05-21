@@ -2,7 +2,7 @@ from collections import defaultdict
 
 tr = open("/data/train/trainLabels.csv", 'r')  # open training labels' file taht has the ids
 tr.readline()  # headers
-NO_OF_FILES = 5000
+NO_OF_FILES = 7000
 index = 1
 words_file = defaultdict(lambda: 0)
 for line in tr:  # for each line in the file
