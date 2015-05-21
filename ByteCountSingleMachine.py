@@ -19,4 +19,3 @@ for line in tr:  # for each line in the file
         break;
     index += 1
     print str(index)
-print words_file
