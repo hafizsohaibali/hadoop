@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-tr = open("trainLabels.csv", 'r')  # open training labels' file taht has the ids
+tr = open("/data/train/trainLabels.csv", 'r')  # open training labels' file taht has the ids
 tr.readline()  # headers
 NO_OF_FILES = 1000
 index = 1
@@ -8,7 +8,7 @@ words_file = defaultdict(lambda: 0)
 for line in tr:  # for each line in the file
     splits = line.split(",")
     trid = splits[0]  # e.g. a key
-    fop = open("train\\"+trid.replace('"', '') + '.bytes', 'r')  # open the bytes file
+    fop = open("/data/train/bytes/"+trid.replace('"', '') + '.bytes', 'r')  # open the bytes file
     for byteLine in fop:
         split = byteLine.replace("\n", "").split(" ")  # break by space
         for j in range(0, len(split)):
